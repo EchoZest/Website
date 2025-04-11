@@ -259,44 +259,67 @@
         <div class="services-one__bottom">
             <div class="row">
                 <div class="col-xl-12">
-                    <div class="owl-carousel services-carousel owl-theme">
-                        <div class="services-one__single wow fadeInUp" data-wow-delay="100ms">
+                    <div class="services-one__carousel owl-theme owl-carousel">
+                        <!-- Service One Single -->
+                        <div class="services-one__single">
                             <div class="services-one__icon">
                                 <span class="icon-online-shopping"></span>
                             </div>
                             <div class="services-one__count"></div>
                             <h3 class="services-one__title"><a href="website-development.html">Social Media<br>Marketing</a></h3>
-                            <a class="services-one__arrow" href="website-development.html"><span
-                                    class="icon-right-arrow"></span></a>
+                            <a class="services-one__arrow" href="website-development.html"><span class="icon-right-arrow"></span></a>
                         </div>
-                        <div class="services-one__single wow fadeInUp" data-wow-delay="200ms">
+                        
+                        <!-- Service One Single -->
+                        <div class="services-one__single">
                             <div class="services-one__icon">
                                 <span class="icon-growth"></span>
                             </div>
                             <div class="services-one__count"></div>
                             <h3 class="services-one__title"><a href="graphic-design.html">Search Engine<br>Optimization</a></h3>
-                            <a class="services-one__arrow" href="graphic-design.html"><span
-                                    class="icon-right-arrow"></span></a>
+                            <a class="services-one__arrow" href="graphic-design.html"><span class="icon-right-arrow"></span></a>
                         </div>
-                        <div class="services-one__single wow fadeInUp" data-wow-delay="300ms">
+                        
+                        <!-- Service One Single -->
+                        <div class="services-one__single">
                             <div class="services-one__icon">
                                 <span class="icon-webpage"></span>
                             </div>
                             <div class="services-one__count"></div>
                             <h3 class="services-one__title"><a href="digital-marketing.html">Website Design &<br>Development</a></h3>
-                            <a class="services-one__arrow" href="digital-marketing.html"><span
-                                    class="icon-right-arrow"></span></a>
+                            <a class="services-one__arrow" href="digital-marketing.html"><span class="icon-right-arrow"></span></a>
                         </div>
-                        <div class="services-one__single wow fadeInUp" data-wow-delay="400ms">
+                        
+                        <!-- Service One Single -->
+                        <div class="services-one__single">
                             <div class="services-one__icon">
                                 <span class="icon-front-end"></span>
                             </div>
                             <div class="services-one__count"></div>
                             <h3 class="services-one__title"><a href="social-marketing.html">Graphic<br>Design</a></h3>
-                            <a class="services-one__arrow" href="social-marketing.html"><span
-                                    class="icon-right-arrow"></span></a>
+                            <a class="services-one__arrow" href="social-marketing.html"><span class="icon-right-arrow"></span></a>
                         </div>
-                        <!-- Add more service items here as needed -->
+                        
+                        <!-- Add more services as needed -->
+                        <!-- Service One Single -->
+                        <div class="services-one__single">
+                            <div class="services-one__icon">
+                                <span class="icon-content-writing"></span>
+                            </div>
+                            <div class="services-one__count"></div>
+                            <h3 class="services-one__title"><a href="content-writing.html">Content<br>Writing</a></h3>
+                            <a class="services-one__arrow" href="content-writing.html"><span class="icon-right-arrow"></span></a>
+                        </div>
+                        
+                        <!-- Service One Single -->
+                        <div class="services-one__single">
+                            <div class="services-one__icon">
+                                <span class="icon-ppc"></span>
+                            </div>
+                            <div class="services-one__count"></div>
+                            <h3 class="services-one__title"><a href="ppc.html">PPC<br>Advertising</a></h3>
+                            <a class="services-one__arrow" href="ppc.html"><span class="icon-right-arrow"></span></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -311,6 +334,8 @@
         </div>
     </div>
 </section>
+
+
         <!--Services One End-->
 
         <!--Get To Know Start-->
@@ -1557,21 +1582,26 @@
     <script src="assets/js/qutiiz.js"></script>
 <script>
     $(document).ready(function(){
-        $(".services-carousel").owlCarousel({
+        $(".services-one__carousel").owlCarousel({
             loop: true,
             margin: 30,
             nav: true,
             dots: false,
             autoplay: true,
-            responsive:{
-                0:{
-                    items:1
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
                 },
-                600:{
-                    items:2
+                576: {
+                    items: 2
                 },
-                1000:{
-                    items:4
+                768: {
+                    items: 3
+                },
+                992: {
+                    items: 4
                 }
             }
         });
