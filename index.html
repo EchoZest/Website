@@ -52,6 +52,32 @@
 
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/qutiiz.css" />
+
+    <style>
+        .whatsapp-sticky {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: #25D366;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-sticky:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-sticky img {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+    </style>
+    
 </head>
 
 <body>
@@ -59,6 +85,11 @@
         <img class="preloader__image" width="60" src="assets/images/loader.png" alt="" />
     </div>
     <!-- /.preloader -->
+    <a href="https://wa.me/919106888507?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20services" 
+       class="whatsapp-sticky" target="_blank">
+       <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp"/>
+    </a>
+
     <div class="page-wrapper">
         <header class="main-header clearfix">
             <nav class="main-menu clearfix">
