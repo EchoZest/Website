@@ -291,8 +291,7 @@
 
 
         <!--Services One Start-->
-        <!--Services One Start-->
-<section class="services-one" id="services">
+        <section class="services-one" id="services">
     <div class="services-one-shape wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms">
         <img class="float-bob-x" src="assets/images/shapes/services-one-shape.png" alt="">
     </div>
@@ -309,7 +308,8 @@
                 </div>
                 <div class="col-xl-6 col-lg-6">
                     <div class="services-one__top-text-box">
-                        <p class="services-one__top-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                        <p class="services-one__top-text">There are many variations of passages of Lorem Ipsum
+                            available, but the majority have suffered alteration in some form.</p>
                     </div>
                 </div>
             </div>
@@ -318,56 +318,71 @@
         <div class="services-one__bottom">
             <div class="row">
                 <div class="col-xl-12">
-                    <!-- Services Carousel with Dots Only -->
+                    <!-- Services Carousel with Circular Dots -->
                     <div class="services-carousel owl-carousel owl-theme">
                         <!-- Service Item 1 -->
                         <div class="item">
-                            <div class="services-one__single wow fadeInUp" data-wow-delay="100ms">
+                            <li class="services-one__single wow fadeInUp" data-wow-delay="100ms">
                                 <div class="services-one__icon">
                                     <span class="icon-online-shopping"></span>
                                 </div>
-                                <h3 class="services-one__title">Ui / Ux Creative design</h3>
-                            </div>
+                                <h3 class="services-one__title"><a href="website-development.html">Ui / Ux Creative design</a></h3>
+                                <a class="services-one__arrow" href="website-development.html">
+                                    <span class="icon-right-arrow"></span>
+                                </a>
+                            </li>
                         </div>
                         
                         <!-- Service Item 2 -->
                         <div class="item">
-                            <div class="services-one__single wow fadeInUp" data-wow-delay="200ms">
+                            <li class="services-one__single wow fadeInUp" data-wow-delay="200ms">
                                 <div class="services-one__icon">
                                     <span class="icon-growth"></span>
                                 </div>
-                                <h3 class="services-one__title">Visual graphic design</h3>
-                            </div>
+                                <h3 class="services-one__title"><a href="graphic-design.html">Visual graphic design</a></h3>
+                                <a class="services-one__arrow" href="graphic-design.html">
+                                    <span class="icon-right-arrow"></span>
+                                </a>
+                            </li>
                         </div>
                         
                         <!-- Service Item 3 -->
                         <div class="item">
-                            <div class="services-one__single wow fadeInUp" data-wow-delay="300ms">
+                            <li class="services-one__single wow fadeInUp" data-wow-delay="300ms">
                                 <div class="services-one__icon">
                                     <span class="icon-webpage"></span>
                                 </div>
-                                <h3 class="services-one__title">Strategy & Digital marketing</h3>
-                            </div>
+                                <h3 class="services-one__title"><a href="digital-marketing.html">Strategy & Digital marketing</a></h3>
+                                <a class="services-one__arrow" href="digital-marketing.html">
+                                    <span class="icon-right-arrow"></span>
+                                </a>
+                            </li>
                         </div>
                         
                         <!-- Service Item 4 -->
                         <div class="item">
-                            <div class="services-one__single wow fadeInUp" data-wow-delay="400ms">
+                            <li class="services-one__single wow fadeInUp" data-wow-delay="400ms">
                                 <div class="services-one__icon">
                                     <span class="icon-front-end"></span>
                                 </div>
-                                <h3 class="services-one__title">Effective business growth</h3>
-                            </div>
+                                <h3 class="services-one__title"><a href="social-marketing.html">Effective business growth</a></h3>
+                                <a class="services-one__arrow" href="social-marketing.html">
+                                    <span class="icon-right-arrow"></span>
+                                </a>
+                            </li>
                         </div>
                         
                         <!-- Service Item 5 -->
                         <div class="item">
-                            <div class="services-one__single wow fadeInUp" data-wow-delay="500ms">
+                            <li class="services-one__single wow fadeInUp" data-wow-delay="500ms">
                                 <div class="services-one__icon">
                                     <span class="icon-mobile-app"></span>
                                 </div>
-                                <h3 class="services-one__title">Mobile App Development</h3>
-                            </div>
+                                <h3 class="services-one__title"><a href="app-development.html">Mobile App Development</a></h3>
+                                <a class="services-one__arrow" href="app-development.html">
+                                    <span class="icon-right-arrow"></span>
+                                </a>
+                            </li>
                         </div>
                     </div>
                 </div>
@@ -377,7 +392,8 @@
         <div class="services-one__find-solutions">
             <div class="row">
                 <div class="col-xl-12">
-                    <p class="services-one__find-solutions-text">qutiiz services built specifically for your business. <a href="about.html">Find Your Solution</a></p>
+                    <p class="services-one__find-solutions-text">qutiiz services built specifically for your
+                        business. <a href="about.html">Find Your Solution</a></p>
                 </div>
             </div>
         </div>
@@ -1442,7 +1458,7 @@
     $('.services-carousel').owlCarousel({
         loop: true,
         margin: 30,
-        nav: true,
+        nav: false,
         dots: true,
         autoplay: true,
         responsive: {
