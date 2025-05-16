@@ -3300,12 +3300,13 @@ ul {
 
 .team-one__img img {
   width: 100%;
+mix-blend-mode: luminosity;
   transform: scale(1);
   transition: all 500ms ease;
 }
 
 .team-one__img img:hover {
-	mix-blend-mode: luminosity;
+	mix-blend-mode: normal;
 }
 
 .team-one__single:hover .team-one__img img {
