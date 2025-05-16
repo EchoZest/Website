@@ -3305,13 +3305,14 @@ mix-blend-mode: luminosity;
   transition: all 500ms ease;
 }
 
-.team-one__img img:hover {
+/* .team-one__img img:hover {
 	mix-blend-mode: normal;
-}
+} */
 
 
 .team-one__single:hover .team-one__img img {
   transform: scale(1);
+	mix-blend-mode: normal;
 }
 
 .team-one__content {
