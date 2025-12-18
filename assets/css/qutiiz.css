@@ -26,8 +26,12 @@
   --qutiiz-white-rgb: 255, 255, 255;
   --qutiiz-black: #04000b;
   --qutiiz-black-rgb: 4, 0, 11;
-  --qutiiz-base: #6222cc;
+/*   
+--qutiiz-base: #6222cc;
   --qutiiz-base-rgb: 98, 34, 204;
+	*/
+	--qutiiz-base: #282975;
+  --qutiiz-base-rgb: 40, 41, 117;
   --qutiiz-bdr-radius: 8px;
 }
 
